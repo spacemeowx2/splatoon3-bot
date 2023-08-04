@@ -8,5 +8,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./.env:/app/.env
+      - ./splatoon3_bot/plugins/splatoon3_bot/resource/data.sqlite:/app/splatoon3_bot/plugins/splatoon3_bot/resource/data.sqlite
     ports:
       - 8080:8080
